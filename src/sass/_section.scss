@@ -1,0 +1,10 @@
+section{
+    background-color: brown;
+    color:white;
+    button{
+        @extend %mybutton
+    }
+    p{
+        @include pStyle(red,30px,"arial",bold)
+    }
+}

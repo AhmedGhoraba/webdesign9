@@ -1,0 +1,28 @@
+header{
+    background-color: $mainColor;
+    
+    height: 200px;
+    div{
+        height: 100px;
+        p{
+            font-size: 30px;
+            span{
+                color:blue;
+            }
+        }
+        button{
+            @extend %mybutton
+        }
+    }
+}
+
+
+@if ($mainColor == green){
+    header{
+        color: white;
+    }
+}@else{
+    header{
+        color:black;
+    }
+}
